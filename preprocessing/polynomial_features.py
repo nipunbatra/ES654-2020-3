@@ -1,4 +1,4 @@
-''' In this file, you will use two parameters degree and include_bias.
+''' In this file, you will utilize two parameters degree and include_bias.
     Reference https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html
 '''
 class PF():
