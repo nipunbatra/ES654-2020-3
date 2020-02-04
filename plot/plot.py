@@ -1,3 +1,7 @@
+'''In this file, you may modify functions as per your desired structure'''
+
+
+
 class Plots():
     def __init__(self):
        
