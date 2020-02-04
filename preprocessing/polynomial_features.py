@@ -1,6 +1,9 @@
+''' In this file, you will use two parameters degree and include_bias.
+    Reference https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html
+'''
 class PF():
     
-    # use reference https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html
+    
 
     def __init__(self, degree=2,include_bias=True):
         
