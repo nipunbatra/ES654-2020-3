@@ -1,10 +1,8 @@
 import numpy as np
-from preprocessing.polynomial_features import PF
+from preprocessing.polynomial_features import PolynomialFeatures
 
 
 
 X = np.arange(50).reshape(10, 5)
-poly = PF(2)
-poly.fit_transform(X)
-
-# Test all the functions defined in PF class
+poly = PolynomialFeatures(2)
+poly.transform(X)
