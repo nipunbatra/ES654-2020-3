@@ -4,12 +4,10 @@
   Method should include: \
     a. Alpha (learning rate, default: 0.01) \
     b. number of iterations (default: 100) \
-    c. Num_restarts (default: 1) We initialise theta_i’s randomly num_restarts number of times. We choose the
-       solution which gives the least cost amongst the different initialisation. \
-    d. Learning rate function over time: \
+    c. Learning rate function over time: \
       (i) ‘Constant’: (default)learning rate does not change over time \
       (ii) ‘Inverse’: learning rate is alpha/t where t is the iteration number \
-    e. Batch_size (setting it to 1 converts to SGD, setting to some number between 1 and N converts to mini-batch GD. 
+    d. Batch_size (setting it to 1 converts to SGD, setting to some number between 1 and N converts to mini-batch GD. 
      Edit `linearRegression/linearRegression.py (fit_non_vectorised())` [3 marks]
   
 2. Solve the above using gradient descent in vectorised form with all the same set of parameters. Edit `linearRegression/linearRegression.py (fit_vectorised())` [2 marks]
