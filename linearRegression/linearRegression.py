@@ -9,7 +9,7 @@ class LinearRegression():
         :param method: Method to be used to learn the weights (['normal', 'vectorised', 'non_vectorised', 'autograd']). (default='normal')
         '''
         self.fit_intercept = fit_intercept
-        self.coef_ = None #Replcae with numpy array or pandas series of coefficients learned using using the fit methods
+        self.coef_ = None #Replace with numpy array or pandas series of coefficients learned using using the fit methods
 
         pass
 
