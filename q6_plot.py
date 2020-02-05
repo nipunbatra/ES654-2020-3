@@ -1,3 +1,3 @@
 import numpy as np
 import matplotlib
-from preprocessing.polynomial_features import PF
+from preprocessing.polynomial_features import PolynomialFeatures
