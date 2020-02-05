@@ -5,49 +5,33 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-class PF():
+class PolynomialFeatures():
+    """
+    Generate a new feature matrix consisting of all polynomial combinations of the features with degree less than or equal to the specified degree. 
+    For example, if an input sample is two dimensional and of the form [a, b], the degree-2 polynomial features are [1, a, b, a^2, ab, b^2].
+    """
     
-    
-
     def __init__(self, degree=2,include_bias=True):
+        """
+        Inputs:
+        param (int) degree : max degree of polynomial features
+        param (boolean) include_bias : specifies wheter to include bias term in returned feature array.
+        """
         
         
         pass
- 
-    def fit():
-        
-        "Compute number of output features."
-        
-        pass
+
     
-    def fit_transform():
+    def transform(X):
+        """
+        Transform data to polynomial features
         
-        "Fit to data, then transform it."
+        Inputs:
+        param X : (np.ndarray) Dataset to be transformed
         
-        pass
-    
-    def get_feature_names():
-        
-        "Return feature names for output features"
-        
-        pass
-        
-    def get_params():
-        
-        "Get parameters for this estimator."
-        
-        pass
-    
-    def set_params():
-        
-        "Set the parameters of this estimator."
-        
-        pass
-    
-    
-    def transform():
-        
-        "Transform data to polynomial features"
+        Outputs:
+        returns (np.ndarray) Tranformed dataset.
+        """
         
         pass
     
