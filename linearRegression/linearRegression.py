@@ -25,7 +25,7 @@ class LinearRegression():
         :param lr_type: If lr_type = 'constant', then the learning rate remains constant,
                         if lr_type = 'inverse', then learning rate = lr / n_iter
 
-        :return
+        :return None
         '''
 
         pass
@@ -42,7 +42,7 @@ class LinearRegression():
         :param lr_type: If lr_type = 'constant', then the learning rate remains constant,
                         if lr_type = 'inverse', then learning rate = lr / n_iter
 
-        :return
+        :return None
         '''
 
         pass
@@ -59,7 +59,7 @@ class LinearRegression():
         :param lr_type: If lr_type = 'constant', then the learning rate remains constant,
                         if lr_type = 'inverse', then learning rate = lr / n_iter
 
-        :return
+        :return None
         '''
 
         pass
@@ -71,7 +71,7 @@ class LinearRegression():
         :param X: pd.DataFrame with rows as samples and columns as features (shape: (n_samples, n_features))
         :param y: pd.Series with rows corresponding to output (shape: (n_samples,))
 
-        :return
+        :return None
         '''
 
         pass
