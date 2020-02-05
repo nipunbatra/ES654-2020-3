@@ -44,9 +44,6 @@ Example for last gif can be found at https://giphy.com/gifs/gradient-6QlTwkigqg4
 You can create this gifs using any online services after you plot individual images for each gradient update.
 Alternatively you can also use the matplotlib.animation library. Edit`q7_plot.py` [3 marks]
 
-For gradient descent (any of the above implementation) plot the contour and update in 2 parameters (theta_0 and theta_1).Write a function to plot three views of gradient descent update. First being: the surface plot of RSS in 3D, second being the
-line fit, and the third being the contour. The first two would like the following: https://giphy.com/gifs/gradient-O9rcZVmRcEGqI and the third would look like the following: https://giphy.com/gifs/gradient-6QlTwkigqg4yk. You can create
-a GIF using any online services (after you have created the images) and need to show only the first 10 iterations. 
 
 8. Compare time required for gradient descent v/s normal and see if it matches theoretical numbers. Edit `q8_compare_time.py`
 [1 mark]
