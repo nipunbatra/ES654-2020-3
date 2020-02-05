@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib
+import matplotlib.pyplot as plt
 from preprocessing.polynomial_features import PolynomialFeatures
 
 x = np.array([i*np.pi/180 for i in range(60,300,4)])
