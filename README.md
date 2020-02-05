@@ -2,14 +2,14 @@
 1. Solve linear regression via gradient descent for ‘d’ dimensional input and N samples using individual parameter updates
 (theta_i's) in a non-vectorised setting.\
   Method should include: \
-    a. Alpha (learning rate, default: 0.01) \ 
+    a. Alpha (learning rate, default: 0.01) \
     b. number of iterations (default: 100) \
     c. Num_restarts (default: 1) We initialise theta_i’s randomly num_restarts number of times. We choose the
        solution which gives the least cost amongst the different initialisation. \
     d. Learning rate function over time: \
       (i) ‘Constant’: (default)learning rate does not change over time \
       (ii) ‘Inverse’: learning rate is alpha/t where t is the iteration number \
-    e. Batch_size (default:N, setting to 1 converts to SGD, setting to some number between 1 and N converts to mini-batch GD. 
+    e. Batch_size (setting it to 1 converts to SGD, setting to some number between 1 and N converts to mini-batch GD. 
      Edit `linearRegression/linearRegression.py (fit_non_vectorised())` [3 marks]
   
 2. Solve the above using gradient descent in vectorised form with all the same set of parameters. Edit `linearRegression/linearRegression.py (fit_vectorised())` [2 marks]
@@ -34,11 +34,24 @@ linear regression using the polynomial of degree d. What can you conclude? Edit 
 the data set (size of x, and thus y). What can you conclude? Edit `q6_plot.py` [1 mark]
 
 
-7. For gradient descent (any of the above implementation) plot the contour and update in 2 parameters (theta_0 and theta_1).Write a function to plot three views of gradient descent update. First being: the surface plot of RSS in 3D, second being the
+7. For gradient descent (any of the above implementation) create the following three gifs of gradient descent updates.
+- the surface plot of RSS in 3D 
+- the line fit
+- the contour
+
+This needs to be done only for the case of 2 coefficients (theta_0 and theta_1). 
+The gifs need to show only the first 10 iterations. 
+Examples for first 2 gifs can be found at https://giphy.com/gifs/gradient-O9rcZVmRcEGqI. 
+Example for last gif can be found at https://giphy.com/gifs/gradient-6QlTwkigqg4yk. 
+You can create this gifs using any online services after you plot individual images for each gradient update.
+Alternatively you can also use the matplotlib.animation library. Edit`q7_plot.py` [3 marks]
+
+For gradient descent (any of the above implementation) plot the contour and update in 2 parameters (theta_0 and theta_1).Write a function to plot three views of gradient descent update. First being: the surface plot of RSS in 3D, second being the
 line fit, and the third being the contour. The first two would like the following: https://giphy.com/gifs/gradient-O9rcZVmRcEGqI and the third would look like the following: https://giphy.com/gifs/gradient-6QlTwkigqg4yk. You can create
-a GIF using any online services (after you have created the images) and need to show only the first 10 iterations. Edit
-`q7_plot.py` [3 marks]
+a GIF using any online services (after you have created the images) and need to show only the first 10 iterations. 
+
 8. Compare time required for gradient descent v/s normal and see if it matches theoretical numbers. Edit `q8_compare_time.py`
 [1 mark]
+
 9. Create a data set that suffers from multicollinearity and check if your gradient descent implementation works. Edit
 `q9_dataset.py` [1 mark]
