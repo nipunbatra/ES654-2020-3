@@ -3,23 +3,23 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 class LinearRegression():
-    def __init__(self, fit_intercept=True, method='normal'):
+    def __init__(self, fit_intercept=True):
         '''
         :param fit_intercept: Whether to calculate the intercept for this model. If set to False, no intercept will be used in calculations (i.e. data is expected to be centered).
         :param method: Method to be used to learn the weights (['normal', 'vectorised', 'non_vectorised', 'autograd']). (default='normal')
         '''
         self.fit_intercept = fit_intercept
-        self.method = method #Method to be used for learning weights
-        self.coef_ = pd.Series([]) #Weights to be learned using the fit methods
+        self.coef_ = None #Replcae with numpy array or pandas series of coefficients learned using using the fit methods
 
         pass
 
-    def fit_non_vectorised(self, X, y, n_iter=100, lr=0.01, lr_type='constant'):
+    def fit_non_vectorised(self, X, y, batch_size, n_iter=100, lr=0.01, lr_type='constant'):
         '''
         Function to train model using non-vectorised gradient descent.
 
         :param X: pd.DataFrame with rows as samples and columns as features (shape: (n_samples, n_features))
         :param y: pd.Series with rows corresponding to output (shape: (n_samples,))
+        :param batch_size: int specify batch size. Batch size can only be between 1 and number of samples in data. 
         :param n_iter: number of iterations (default: 100)
         :param lr: learning rate (default: 0.01)
         :param lr_type: If lr_type = 'constant', then the learning rate remains constant,
@@ -30,12 +30,13 @@ class LinearRegression():
 
         pass
 
-    def fit_vectorised(self, X, y, n_iter=100, lr=0.01, lr_type='constant'):
+    def fit_vectorised(self, X, y,batch_size, n_iter=100, lr=0.01, lr_type='constant'):
         '''
         Function to train model using vectorised gradient descent.
 
         :param X: pd.DataFrame with rows as samples and columns as features (shape: (n_samples, n_features))
         :param y: pd.Series with rows corresponding to output (shape: (n_samples,))
+        :param batch_size: int specify batch size. Batch size can only be between 1 and number of samples in data.
         :param n_iter: number of iterations (default: 100)
         :param lr: learning rate (default: 0.01)
         :param lr_type: If lr_type = 'constant', then the learning rate remains constant,
@@ -46,12 +47,13 @@ class LinearRegression():
 
         pass
 
-    def fit_autograd(self, X, y, n_iter=100, lr=0.01, lr_type='constant'):
+    def fit_autograd(self, X, y, batch_size, n_iter=100, lr=0.01, lr_type='constant'):
         '''
         Function to train model using gradient descent with Autograd to compute the gradients.
 
         :param X: pd.DataFrame with rows as samples and columns as features (shape: (n_samples, n_features))
         :param y: pd.Series with rows corresponding to output (shape: (n_samples,))
+        :param batch_size: int specify batch size. Batch size can only be between 1 and number of samples in data.
         :param n_iter: number of iterations (default: 100)
         :param lr: learning rate (default: 0.01)
         :param lr_type: If lr_type = 'constant', then the learning rate remains constant,
