@@ -1,3 +1,9 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import autograd
+
+
 class GD():
     def __init__(self, alpha=0.01, n_iter=100, n_restarts =1, learning_rate='constant', 
                 batch_size='N'):
@@ -19,7 +25,7 @@ class GD():
         
         '''
         
-        return theta
+        return np.array of theta_i's
         ''' 
         
         pass
@@ -30,7 +36,7 @@ class GD():
         '''
         
         
-        return theta
+        return np.array of theta_i's
         '''
         
         pass
@@ -41,9 +47,7 @@ class GD():
         '''
         
         
-        return theta
+        return np.array of theta_i's
         '''
-        
-        return
         
         pass
