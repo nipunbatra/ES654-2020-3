@@ -22,7 +22,7 @@ class PolynomialFeatures():
         pass
 
     
-    def transform(X):
+    def transform(self,X):
         """
         Transform data to polynomial features
         
