@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
-imort matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
+from .gradient_descent.py import GD
 
 class LinearRegression():
     def __init__(self, fit_intercept=True, method='normal'):
