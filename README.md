@@ -10,14 +10,11 @@
       (i) ‘Constant’: (default)learning rate does not change over time \
       (ii) ‘Inverse’: learning rate is alpha/t where t is the iteration number \
     e. Batch_size (default:N, setting to 1 converts to SGD, setting to some number between 1 and N converts to mini-batch GD. 
-     Edit `linearRegression/gradient_descent (non_vectorized_gd())` [3 marks]
-     
-2. Solve the above using gradient descent in vectorised form with all the same set of parameters. Edit `linearRegression/
-gradient_descent (vectorized_gd())` [2 marks]
+     Edit `linearRegression/linearRegression.py (fit_non_vectorised())` [3 marks]
+  
+2. Solve the above using gradient descent in vectorised form with all the same set of parameters. Edit `linearRegression/linearRegression.py (fit_vectorised())` [2 marks]
 
-3. Write a function gradientDescentAutogradRegression() to learn the regression coefficients using gradient descent. Instead
-of writing the formulae for computing gradients by yourself, you will use Autograd to automatically do that for you. All other
-parameters remain the same. Edit `linearRegression/gradient_descent (autograd_regression_gd())` [1 mark]
+3. Write a function to learn the regression coefficients using gradient descent. Instead of writing the formulae for computing gradients by yourself, you will use Autograd to automatically do that for you. All other parameters remain the same. Edit `linearRegression/linearRegression.py (fit_autograd())` [1 mark]
 
 
 4. Write a function inspired by sklearn’s polynomial preprocessing: (https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html) your function should have: degree and include bias parameters only.Edit
