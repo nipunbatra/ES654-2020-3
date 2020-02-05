@@ -2,7 +2,7 @@
 1. Solve linear regression via gradient descent for ‘d’ dimensional input and N samples using individual parameter updates
 (theta_i's) in a non-vectorised setting.\
   Method should include: \
-    a. Alpha (learning rate, default: 0.01) \
+    a. learning rate, default: 0.01 \
     b. number of iterations (default: 100) \
     c. Learning rate function over time: \
       (i) ‘Constant’: (default)learning rate does not change over time \
