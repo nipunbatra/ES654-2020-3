@@ -1,6 +1,10 @@
 ''' In this file, you will utilize two parameters degree and include_bias.
     Reference https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html
 '''
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
 class PF():
     
     
