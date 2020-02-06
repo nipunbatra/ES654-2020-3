@@ -10,8 +10,8 @@ class PolynomialFeatures():
     def __init__(self, degree=2,include_bias=True):
         """
         Inputs:
-        param (int) degree : max degree of polynomial features
-        param (boolean) include_bias : specifies wheter to include bias term in returned feature array.
+        param degree : (int) max degree of polynomial features
+        param include_bias : (boolean) specifies wheter to include bias term in returned feature array.
         """
         
         
