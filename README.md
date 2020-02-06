@@ -50,3 +50,6 @@ Alternatively you can also use the matplotlib.animation library. Edit`q7_plot.py
 
 9. Create a data set that suffers from multicollinearity and check if your gradient descent implementation works. Edit
 `q9_dataset.py` [1 mark]
+
+
+Query Doc: https://docs.google.com/document/d/1gq52RGvw3tMKJAiEfkXxGsrEEj-LF5YLX47ZBt--0MI/edit?usp=sharing
