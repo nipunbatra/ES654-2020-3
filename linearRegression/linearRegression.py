@@ -40,7 +40,7 @@ class LinearRegression():
         :param n_iter: number of iterations (default: 100)
         :param lr: learning rate (default: 0.01)
         :param lr_type: If lr_type = 'constant', then the learning rate remains constant,
-                        if lr_type = 'inverse', then learning rate = lr / n_iter
+                        if lr_type = 'inverse', then learning rate = lr / t, where t = current iteration number
 
         :return None
         '''
@@ -58,7 +58,7 @@ class LinearRegression():
         :param n_iter: number of iterations (default: 100)
         :param lr: learning rate (default: 0.01)
         :param lr_type: If lr_type = 'constant', then the learning rate remains constant,
-                        if lr_type = 'inverse', then learning rate = lr / n_iter
+                        if lr_type = 'inverse', then learning rate = lr / t, where t = current iteration number
 
         :return None
         '''
