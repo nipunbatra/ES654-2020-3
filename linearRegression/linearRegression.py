@@ -6,7 +6,6 @@ class LinearRegression():
     def __init__(self, fit_intercept=True):
         '''
         :param fit_intercept: Whether to calculate the intercept for this model. If set to False, no intercept will be used in calculations (i.e. data is expected to be centered).
-        :param method: Method to be used to learn the weights (['normal', 'vectorised', 'non_vectorised', 'autograd']). (default='normal')
         '''
         self.fit_intercept = fit_intercept
         self.coef_ = None #Replace with numpy array or pandas series of coefficients learned using using the fit methods
