@@ -12,7 +12,8 @@
   
 2. Solve the above using gradient descent in vectorised form with all the same set of parameters. Edit `linearRegression/linearRegression.py (fit_vectorised())` [2 marks]
 
-3. Write a function to learn the regression coefficients using gradient descent. Instead of writing the formulae for computing gradients by yourself, you will use Autograd to automatically do that for you. All other parameters remain the same. Edit `linearRegression/linearRegression.py (fit_autograd())` [1 mark]
+3. Write a function to learn the regression coefficients using gradient descent. Instead of writing the formulae for computing gradients by yourself, you will use Autograd to automatically do that for you. All other parameters remain the same. 
+Autograd reference: https://github.com/HIPS/autograd. Edit `linearRegression/linearRegression.py (fit_autograd())` [1 mark]
 
 
 4. Write a function inspired by sklearn’s polynomial preprocessing: (https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html) your function should have: degree and include bias parameters only.Edit
