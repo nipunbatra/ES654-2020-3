@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+# Import Autograd modules here
 
 class LinearRegression():
     def __init__(self, fit_intercept=True):
@@ -49,6 +50,7 @@ class LinearRegression():
     def fit_autograd(self, X, y, batch_size, n_iter=100, lr=0.01, lr_type='constant'):
         '''
         Function to train model using gradient descent with Autograd to compute the gradients.
+        Autograd reference: https://github.com/HIPS/autograd
 
         :param X: pd.DataFrame with rows as samples and columns as features (shape: (n_samples, n_features))
         :param y: pd.Series with rows corresponding to output (shape: (n_samples,))
