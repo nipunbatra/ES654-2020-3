@@ -18,7 +18,7 @@ class LinearRegression():
 
         :param X: pd.DataFrame with rows as samples and columns as features (shape: (n_samples, n_features))
         :param y: pd.Series with rows corresponding to output (shape: (n_samples,))
-        :param batch_size: int specify batch size. Batch size can only be between 1 and number of samples in data. 
+        :param batch_size: int specifying the batch size. Batch size can only be between 1 and number of samples in data. 
         :param n_iter: number of iterations (default: 100)
         :param lr: learning rate (default: 0.01)
         :param lr_type: If lr_type = 'constant', then the learning rate remains constant,
@@ -35,7 +35,7 @@ class LinearRegression():
 
         :param X: pd.DataFrame with rows as samples and columns as features (shape: (n_samples, n_features))
         :param y: pd.Series with rows corresponding to output (shape: (n_samples,))
-        :param batch_size: int specify batch size. Batch size can only be between 1 and number of samples in data.
+        :param batch_size: int specifying the batch size. Batch size can only be between 1 and number of samples in data.
         :param n_iter: number of iterations (default: 100)
         :param lr: learning rate (default: 0.01)
         :param lr_type: If lr_type = 'constant', then the learning rate remains constant,
@@ -52,7 +52,7 @@ class LinearRegression():
 
         :param X: pd.DataFrame with rows as samples and columns as features (shape: (n_samples, n_features))
         :param y: pd.Series with rows corresponding to output (shape: (n_samples,))
-        :param batch_size: int specify batch size. Batch size can only be between 1 and number of samples in data.
+        :param batch_size: int specifying the  batch size. Batch size can only be between 1 and number of samples in data.
         :param n_iter: number of iterations (default: 100)
         :param lr: learning rate (default: 0.01)
         :param lr_type: If lr_type = 'constant', then the learning rate remains constant,
