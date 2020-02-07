@@ -41,7 +41,9 @@ the data set (size of x, and thus y). What can you conclude? Edit `q6_plot.py` [
 This needs to be done only for the case of 2 coefficients (theta_0 and theta_1). 
 The gifs need to show only the first 10 iterations. 
 Examples for first 2 gifs can be found at https://giphy.com/gifs/gradient-O9rcZVmRcEGqI. 
+![Example of 1&2 gifs](gif1.gif)
 Example for last gif can be found at https://giphy.com/gifs/gradient-6QlTwkigqg4yk. 
+![Example of 3rd gif](gif2.gif)
 You can create this gifs using any online services after you plot individual images for each gradient update.
 Alternatively you can also use the matplotlib.animation library. Edit`q7_plot.py` [3 marks]
 
