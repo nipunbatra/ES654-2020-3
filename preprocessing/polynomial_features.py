@@ -22,13 +22,13 @@ class PolynomialFeatures():
         """
         Transform data to polynomial features
         Generate a new feature matrix consisting of all polynomial combinations of the features with degree less than or equal to the specified degree. 
-        For example, if an input sample is two dimensional and of the form [a, b], the degree-2 polynomial features are [1, a, b, a^2, ab, b^2].
+        For example, if an input sample is  np.array([a, b]), the degree-2 polynomial features with "include_bias=True" are [1, a, b, a^2, ab, b^2].
         
         Inputs:
-        param X : (np.ndarray) Dataset to be transformed
+        param X : (np.array) Dataset to be transformed
         
         Outputs:
-        returns (np.ndarray) Tranformed dataset.
+        returns (np.array) Tranformed dataset.
         """
         
         pass
