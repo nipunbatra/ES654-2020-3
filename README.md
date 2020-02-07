@@ -16,7 +16,7 @@
 Autograd reference: https://github.com/HIPS/autograd. Edit `linearRegression/linearRegression.py (fit_autograd())` [1 mark]
 
 
-4. Write a function inspired by sklearn’s polynomial preprocessing: (https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html) your function should have: degree and include bias parameters only. For this question you can aasume that input in a 1-dimensional numpy array.  For example, if an input sample is  np.array([a, b]), the degree-2 polynomial features with "include_bias=True" are [1, a, b, a<sup>2</sup>, b<sup>2</sup>].Edit
+4. Write a function inspired by sklearn’s polynomial preprocessing: (https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html) your function should have: degree and include bias parameters only. For this assignment, assume that input is a 1-dimensional numpy array.  For example, if an input sample is  np.array([a, b]), the degree-2 polynomial features with "include_bias=True" are [1, a, b, a<sup>2</sup>, b<sup>2</sup>].Edit
 `preprocessing/polynomial_features` [1 mark]
 
 5. Create a data set as follows: 
@@ -40,11 +40,11 @@ the data set (size of x, and thus y). What can you conclude? Edit `q6_plot.py` [
 
 This needs to be done only for the case of 2 coefficients (theta_0 and theta_1). 
 The gifs need to show only the first 10 iterations. 
-Examples for first 2 gifs can be found at https://giphy.com/gifs/gradient-O9rcZVmRcEGqI. 
-![Example of 1&2 gifs](gif1.gif)
-Example for last gif can be found at https://giphy.com/gifs/gradient-6QlTwkigqg4yk. 
-![Example of 3rd gif](gif2.gif)
-You can create this gifs using any online services after you plot individual images for each gradient update.
+Examples for first 2 gifs can be found at https://giphy.com/gifs/gradient-O9rcZVmRcEGqI.<br /> 
+![Example of 1&2 gifs](gif1.gif)<br />
+Example for last gif can be found at https://giphy.com/gifs/gradient-6QlTwkigqg4yk. <br />
+![Example of 3rd gif](gif2.gif)<br />
+You can create these gifs using any online services after you plot individual images for each gradient update.
 Alternatively you can also use the matplotlib.animation library. Edit`q7_plot.py` [3 marks]
 
 
